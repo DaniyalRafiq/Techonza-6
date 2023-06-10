@@ -65,16 +65,48 @@ function hideLoadingScreen() {
 $(".filter_").click(function (e) {
   e.preventDefault()
   var myVariable = $(this).attr("data-type");
-  
+
   $(`.single_card_[data-type="${myVariable}"]`).show().siblings(".single_card_").hide();
-  if(myVariable == "all"){
+  if (myVariable == "all") {
     $(".single_card_").show();
   }
 })
-$('.filter_').click(function() {
+$('.filter_').click(function () {
   $(this).addClass('active').siblings().removeClass('active');
+});
+
+function handleSearchInput() {
+  var searchInput = $('#searchInput').val().toLowerCase();
+
+  // Filter the search result elements based on the input
+  $('.populor_card_side').each(function () {
+    var title = $(this).find('h4').text().toLowerCase();
+    if ($('#searchInput').val() !== '' && title.indexOf(searchInput) > -1) {
+      $(this).show();
+    }
+    else {
+      $(this).hide();
+    }
+  });
+}
+
+
+
+
+
+// Keyup event listener on search input
+$('#searchInput').keyup(function () {
+  if ($(this).val() != "") {
+    $(".form").addClass('active')
+    $(".search_result").slideDown();
+  }
+  else {
+    $(".form").removeClass('active')
+    $(".search_result").slideUp();
+  }
 });
 
 $(function () {
   $('.lazy').Lazy();
 });
+
