@@ -372,3 +372,17 @@
                         </div>
                      </div>
                   </div> -->  
+
+
+
+
+
+                  <!-- Cate Card  -->
+                  <a href="#" class="category_card">
+                     <div class="cate_img">
+                        <img src="images/category/cate (1).webp" alt="">
+                     </div>
+                     <div class="category_title">
+                        Tea <i class="fa fa-external-link" aria-hidden="true"></i>
+                     </div>
+                  </a>

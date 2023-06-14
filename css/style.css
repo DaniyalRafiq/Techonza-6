@@ -154,6 +154,7 @@ figure {
 
 section {
     padding: 30px 0px;
+    background-color: #fff;
 }
 
 figure.overlay {
@@ -308,7 +309,7 @@ header {
     align-items: center;
     justify-content: center;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .form input {
@@ -1544,7 +1545,7 @@ footer{
 
 .footer {
     background: #00011a;
-    margin-top: 70px;
+    margin-top: 20px;
 }
 
 .footer_logo {
@@ -1686,7 +1687,10 @@ footer{
     gap: 9px;
     align-items: center;
 }
-
+.subscribe_field input {
+    width: 100%;
+    padding: 8px 12px;
+}
 .subscribe_footer p {
     color: #cdcdcd;
     font-size: 14px;
@@ -1708,9 +1712,7 @@ footer{
 
 .subscribe_field {
     background: white;
-    padding: 5px;
     border-radius: 5px;
-    padding-left: 12px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2052,7 +2054,7 @@ section.store_Section {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(163px, 1fr));
     margin-top: 40px;
-    gap: 60px 50px;
+    gap: 60px 30px;
     margin-bottom: 50px;
 }
 
@@ -2069,8 +2071,6 @@ section.store_Section {
     gap: 10px;
     position: relative;
     padding-bottom: 10px;
-    height: 140px;
-    overflow: auto;
 }
 
 .alphabet-item {
@@ -2141,7 +2141,8 @@ section.store_Section {
     font-weight: 600;
     text-align: center;
     background: #d7d7d733;
-    padding: 2px 0;
+    padding: 8px 0;
+    font-size: 16px;
     transition: 0.3s;
 }
 
@@ -2227,6 +2228,7 @@ section.store_Section {
     flex: 0 0 100px;
     padding: 5px;
     border: 2px solid var(--primary-100);
+    height: 89px;
 }
 
 .cate_main_img img {
@@ -2284,7 +2286,7 @@ section.store_Section {
     width: 100%;
     align-items: center;
     gap: 20px;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
 .cate_link:hover {
     background: var(--primary-400);
@@ -2294,7 +2296,10 @@ section.store_Section {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(333px , 1fr));
     gap: 20px;
+    width: 100%;
+    align-content: flex-start;
 }
+.cate_wrapper {display: flex;}
 .cate_img {
     height: 70px;
     width: 100;
@@ -2446,7 +2451,7 @@ section.Popular_Category {
     gap: 3px;
     align-items: center;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .single_store_card_upper {
@@ -2458,6 +2463,9 @@ section.Popular_Category {
     padding: 8px 34px;
     border-radius: 0 0 10px 10px;
     border: 1px solid #0002;
+}
+.single_store_card_upper span i {
+    font-size: 18px;
 }
 .single_store_card_upper .add {
     color: orange;
@@ -2482,25 +2490,25 @@ section.Popular_Category {
     padding: 1px 22px;
     border-radius:  0 0 5px 5px;
     position: absolute;
-    top: -31px;
+    top: -26px;
 }
 
 .verified span:after {
     content: "";
     position: absolute;
     background: #0bc10b;
-    height: 10px;
+    height: 6px;
     width: 10px;
     left: 100%;
     clip-path: polygon(0 1%, 0% 100%, 100% 100%);
-    top: 0;
+    top: 0px;
     filter: brightness(0.8);
 }
 .verified span:before {
     content: "";
     position: absolute;
     background: #0bc10b;
-    height: 10px;
+    height: 6px;
     width: 10px;
     right: 100%;
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
@@ -2569,7 +2577,7 @@ section.Popular_Category {
 }
 
 .modal-footer {
-    padding: 10px 25px;
+    padding: 10px 17px;
     font-size: 13px;
     color: var(--primary-100);
     background: #f7f7f7;
@@ -2583,7 +2591,7 @@ section.Popular_Category {
     font-size: 14px;
 }
 .coupon_content p {
-    font-size: 14px;
+    font-size: 15px;
     padding-bottom: 10px;
 }
 .nodal_ex_add {
@@ -2594,6 +2602,7 @@ section.Popular_Category {
 
 .nodal_ex_add .added , .nodal_ex_add .exp {
     font-size: 12px;
+    font-weight: 600;
 }
 
 .upper_modal_content {
@@ -2623,7 +2632,7 @@ section.Popular_Category {
     padding-bottom: 5px;
 }
  .terms-conditions ul li {
-    font-size: 13px;
+    font-size: 14px;
     color: var(--accent-dark);
     font-family: var(--font-r);
     list-style: disc !important;
@@ -2635,6 +2644,7 @@ section.Popular_Category {
 .term_child {
     height: 81px;
     overflow: auto;
+    padding-left: 5px;
 }
 .copy_code {
     width: 100%;
@@ -2902,7 +2912,6 @@ background-attachment: fixed;
     display: flex;
     align-items: center;
     gap: 20px;
-    box-shadow: 0 0 5px #e5e7eb;
     padding: 13px;
     border-radius: 5px;
     border: 1px solid var(--secondary-200);
@@ -2997,7 +3006,7 @@ background-attachment: fixed;
 .sing_card_store_main {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 40px;
 }
 .singl_store_card_content {
     align-items: flex-start;
