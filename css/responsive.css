@@ -75,6 +75,7 @@
       top: 150px;
       left: 16px;
       height: unset;
+      padding-right: 13px;
    }
 
    .store_main {
@@ -250,7 +251,7 @@
    }
 
    .form {
-      height: 30px;
+      height: 39px;
       padding-left: 10px;
       border-radius: 30px;
    }
@@ -338,7 +339,7 @@
    }
 
    .store {
-      margin-top: 140px;
+      margin-top: 161px;
    }
 
    .modal-header {
