@@ -33,9 +33,7 @@
 .single_blog_main {
    flex-direction: column;
 }
-.single_category_wrraper {
-   flex-direction: column;
-}
+
 .sidebar {
    width: 100%;
    position: unset;
@@ -60,9 +58,9 @@
    position: unset;
 }
 
-/* .store_main .sidebar{
+.contact_img{
    display: none;
-} */
+}
 
 .alphabet {
    position: absolute;
