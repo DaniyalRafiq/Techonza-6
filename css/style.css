@@ -816,7 +816,7 @@ section:hover .main_heading h4:before {
     border-radius: 50px;
     overflow: hidden;
     padding: 2px;
-    border: 1px solid var(--secondary-700);
+    border: 1px solid var(--secondary-100);
 }
 
 .post_img_side img {
@@ -1367,7 +1367,7 @@ footer {
 }
 
 .side_post.footer_blog_title h4:hover {
-    color: var(--secondary-300);
+    color: var(--secondary-100);
 }
 
 .footer_blog_main {
@@ -2797,6 +2797,7 @@ figure img {
     display: flex;
     justify-content: center;
     border: 1px solid var(--primary-500);
+    box-shadow: inset 0 0 9px #0002;
 }
 
 
