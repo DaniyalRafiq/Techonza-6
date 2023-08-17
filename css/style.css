@@ -1524,6 +1524,9 @@ footer {
     font-size: 14px;
     font-weight: 500;
     color: #0008;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .cate_card:hover {
@@ -3442,4 +3445,14 @@ figure img {
     flex-direction: column;
     gap: 15px;
 }
+.cate_card_title span i , .psot_date_side i {
+    color: var(--secondary-200);
+    font-size: 16px;
+}
+.psot_date_side {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 /* ==========Popular_StoreEnd ========== */
