@@ -542,7 +542,7 @@ header {
     flex-direction: column;
     gap: 0px;
     border-radius: 0 0 5px 5px;
-    padding: 0 12px 12px;
+    padding: 12pX;
     background: white;
 }
 
@@ -564,11 +564,12 @@ header {
 }
 
 .hero_img_content {
-    display: flex;
+    display: FLEX;
     gap: 5px;
     align-items: center;
     justify-content: space-between;
     margin-top: -45px;
+    display: none;
 }
 
 .hero_card_tag {
@@ -584,7 +585,7 @@ header {
     background: var(--primary-100);
     font-size: 13px;
     padding: 5px 9px;
-    border-radius: 5px 0 0 5px;
+    border-radius: 0px 0 0 5px;
     margin-right: -13px;
     color: white;
     position: relative;
@@ -1317,9 +1318,6 @@ footer {
     transition: 0.3s ease;
 }
 
-.footer_content:hover .footer_heading h4:after {
-    width: 100%;
-}
 
 .footer_category a {
     border: 1px solid #00023f;
@@ -2483,11 +2481,11 @@ figure img {
 }
 
 .latest_side_post_card_content .aurthor_name {
-    color: var(--primary-400);
+    color: var(--secondary-700);
 }
 
 .user_icon {
-    color: var(--primary-400);
+    color: var(--secondary-700);
 }
 
 .latest_side_post_card_content .single_img_aurthor {
@@ -3208,12 +3206,9 @@ figure img {
 }
 
 .blog_date {
-    color: var(--secondary-200);
-    background: #3336e838;
+    color: gainsboro;
     padding: 3px 9px;
     border-radius: 5px;
-    backdrop-filter: blur(23px);
-    text-shadow: 0 0 5px black;
 }
 
 span.blog_date {}
@@ -3366,5 +3361,67 @@ span.blog_date {}
 }
 .side_store_img_main {
     padding: 5px;
+}
+.home_blog_sub_content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.home_blog_sub_content span {
+    font-size: 14px;
+    color: var(--secondary-700);
+    font-weight: 500;
+}
+.social_links {
+    display: flex;
+    align-items: center;
+    gap: 10px 17px;
+    margin-top: 4px;
+    flex-wrap: wrap;
+}
+.social_link {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    position: relative;
+}
+.social_link svg {
+    fill: white;
+    z-index: 2;
+    height: 17px;
+}
+.social_link:after {
+    content: "";
+    position: absolute;
+    transition: 0.3s;
+    inset: 0;
+}
+.facebook {
+    background: #3b5998;
+}
+.instagram {
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+}
+.google_plus {
+    background: #db4a39;
+}
+.linkedin {
+    background: #0072b1;
+}
+.twiiter {
+    background: #2db3fd;
+}
+.pintrest {
+    background: #c8232c;
+}
+.social_link:hover:after {
+    background: #00000063;
 }
 /* ==========Popular_StoreEnd ========== */
