@@ -2684,7 +2684,7 @@ figure img {
     font-size: 15px;
     height: 35px;
     border-radius: 5px;
-    color: var(--black) !important;
+    color: var(--white) !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3017,7 +3017,7 @@ figure img {
     padding: 15px;
     border: 1px solid #0002;
     background: #ededed;
-    box-shadow: inset 0 0 9px #b6b8ff94;
+    box-shadow: inset 0 0 6px #d1333b3d;
     position: relative;
     overflow: hidden;
 }
@@ -3036,7 +3036,7 @@ figure img {
     left: 0;
     width: 162px;
     height: 100%;
-    background: var(--primary-400) !important;
+    background: var(--secondary-400) !important;
 }
 
 .store_page_cards {
@@ -3097,7 +3097,7 @@ figure img {
 
 .store_card_content span {
     font-size: 13px;
-    color: var(--primary-700);
+    color: var(--secondary-700);
     font-weight: 600;
 }
 
@@ -3429,5 +3429,12 @@ span.blog_date {}
 }
 .social_link:hover:after {
     background: #00000063;
+}
+.store_main_heading a {
+    background: var(--secondary-400) !important;
+}
+
+.store_main_heading a:after {
+    background: var(--secondary-600) !important;
 }
 /* ==========Popular_StoreEnd ========== */
