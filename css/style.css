@@ -1543,7 +1543,7 @@ footer {
     overflow: hidden;
     flex: 0 0 60px;
     border-radius: 5px;
-    transition: 0.6s;
+    transition: 0.2s;
     border-radius: 50px;
 }
 
