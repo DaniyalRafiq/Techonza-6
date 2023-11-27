@@ -1,22 +1,16 @@
 @media (max-width: 1212px) {
 
 
-   .img_content_main {
-      flex-direction: column;
-   }
-   
+    
    .sing_store_upper_card_img {
       width: 160px;
    }
    
-   .sing_store_upper_card_content {
-      justify-content: center;
-      align-items: center;
-      gap: 14px;
-   }
+
    
    .sing_store_upper_card_content_offers {
       flex-direction: column;
+      align-items: flex-start;
       gap: 14px;
    }
    }
@@ -98,9 +92,7 @@
       flex-direction: column;
    }
    
-   .img_content_main {
-      flex-direction: revert;
-   }
+
    
    .sing_store_upper_card_content {
       justify-content: flex-start;
@@ -112,6 +104,7 @@
       flex-direction: row;
       justify-content: space-between;
       width: 100%;
+      align-items: center;
    }
    .footer_main.footer_main_two{
          display: flex;
@@ -149,6 +142,10 @@
       height: 0;
       backdrop-filter: blur(4px);
       opacity: 0;
+   }
+   .img_content_main{
+      flex-direction: column;
+      align-items: center;
    }
    
    .blog_main:not(:first-child) {
@@ -222,7 +219,7 @@
       padding: 0;
       z-index: 11;
       scale: 1;
-      flex: 0 0 130px;
+      flex: 0 0 auto;
    }
    
    .free_delivery {
@@ -248,11 +245,10 @@
       right: 12px;
       z-index: 10;
       font-size: 20px;
-      color: white;
+      color: var(--secondary-300);
    }
    
    .header_bottom {
-      /* height: 0; */
       padding: 6px 0;
       position: relative;
    }
@@ -313,9 +309,7 @@
       width: 139px;
    }
    
-   .img_content_main {
-      flex-direction: column;
-   }
+
    
    .sing_store_upper_card_img {
       width: 160px;
@@ -331,6 +325,7 @@
       flex-direction: column;
       gap: 14px;
       padding: 0 30px;
+      align-items: center;
    }
    .blog_card_content .single_aurthor_tags{
       display: flex;
@@ -371,7 +366,6 @@
    }
    
    .header_wrapper {
-      gap: 25px;
    }
    .single_card_title_detail p{
    text-align : center ;
@@ -468,21 +462,42 @@
       width: 100%;
    }
    
-   .header_wrapper:has(.form.active) .logo {
-      margin-left: -200px;
-      transition: all .2s ease-in-out;
-      scale: 0;
-   }
+
    .footer_content.cate_grid {
       grid-column: unset;
   }
    }
-   
+
    @media (max-width: 444px) {
       .store_page_cards{
          grid-template-columns: repeat(auto-fill, minmax(163px, 1fr));
       }
+    .discount_btn{
+      display: none;
+    }
+    .menu_bar {
+      bottom: 77px;
+      z-index: 500;
+      right: 23px;
+  }
+  
+  .header_top_form {
+      width: 100%;
+  }
+  .header_bottom {
+    height: 50px;
+    height: 0;
+    padding: 0;
    }
+   .header_top{
+      position: unset;
+   }
+   .header_wrapper {
+      gap: 10px;
+      flex-direction: column;
+      align-items: flex-start;
+  }
+}
    @media (max-width: 425px) {
    .store {
       margin-top: 180px;
@@ -495,5 +510,5 @@
    #staticBackdropLabel {
       text-align: center;
    }
-   
    }
+   
